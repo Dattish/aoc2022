@@ -1,9 +1,8 @@
-import java.nio.file.Files
-import java.nio.file.Path
-import java.util.PriorityQueue
+
+import java.io.File
 
 fun main() {
-    val lines = Files.readAllLines(Path.of("6.txt"))
+    val lines = File("6.txt").readLines()
     val cap = 14
     val q = ArrayDeque<Int>(cap + 1)
     var count = 0L

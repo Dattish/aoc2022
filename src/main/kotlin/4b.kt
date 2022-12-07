@@ -1,8 +1,8 @@
-import java.nio.file.Files
-import java.nio.file.Path
+
+import java.io.File
 
 fun main() {
-    val lines = Files.readAllLines(Path.of("4.txt"))
+    val lines = File("4.txt").readLines()
     var res = 0
     lines.forEach {
         val elves = it.split(",")

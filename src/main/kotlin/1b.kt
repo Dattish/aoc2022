@@ -1,9 +1,9 @@
-import java.nio.file.Files
-import java.nio.file.Path
+
+import java.io.File
 import java.util.*
 
 fun main() {
-    val lines = Files.readAllLines(Path.of("1.txt"))
+    val lines = File("1.txt").readLines()
     val elves = TreeSet<Long>(Comparator.reverseOrder())
 
     var current = 0L

@@ -1,5 +1,4 @@
-import java.nio.file.Files
-import java.nio.file.Path
+import java.io.File
 
 fun main() {
     fun calculateWinScore(translatedOpponent: String, translatedYou: String): Int {
@@ -75,7 +74,7 @@ fun main() {
         } + won
     }
 
-    val lines = Files.readAllLines(Path.of("2.txt"))
+    val lines = File("2.txt").readLines()
 
     var res = 0L
     lines.forEach {

@@ -1,8 +1,8 @@
-import java.nio.file.Files
-import java.nio.file.Path
+
+import java.io.File
 
 fun main() {
-    val lines = Files.readAllLines(Path.of("5.txt"))
+    val lines = File("5.txt").readLines()
     val boxes = mutableListOf<ArrayDeque<Char>>()
     val moveRegex = Regex("move ([0-9]+) from ([0-9]+) to ([0-9]+)")
     lines.filter { it != "" }.forEach {

@@ -1,5 +1,5 @@
-import java.nio.file.Files
-import java.nio.file.Path
+
+import java.io.File
 
 fun main() {
     fun getPriority(char: Char): Int =
@@ -8,7 +8,7 @@ fun main() {
         else
             char.code - 38
 
-    val lines = Files.readAllLines(Path.of("3.txt"))
+    val lines = File("3.txt").readLines()
 
     val firstElf = mutableSetOf<Char>()
     val secondElf = mutableSetOf<Char>()
