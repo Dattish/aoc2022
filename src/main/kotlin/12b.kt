@@ -1,7 +1,7 @@
 import java.io.File
 import kotlin.math.min
 
-fun main() {
+fun day12b() {
     val graph = File("12.txt").readLines().map { it.toCharArray() }
     val maxH = graph.size
     val maxW = graph[0].size

@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main() {
+fun day12a() {
     val graph = File("12.txt").readLines().map { it.toCharArray() }
     val maxH = graph.size
     val maxW = graph[0].size

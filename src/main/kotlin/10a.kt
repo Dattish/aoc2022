@@ -1,7 +1,7 @@
 
 import java.io.File
 
-fun main() {
+fun day10a() {
     val lines = File("10.txt").readLines()
     var x = 1L
     var cycle = 0

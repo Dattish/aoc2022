@@ -1,7 +1,7 @@
 import java.io.File
 import java.util.*
 
-fun main() {
+fun day1a() {
     val lines = File("1.txt").readLines()
     val elves = TreeSet<Long>(Comparator.reverseOrder())
 

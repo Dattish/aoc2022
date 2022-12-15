@@ -1,7 +1,7 @@
 
 import java.io.File
 
-fun main() {
+fun day3a() {
     fun getPriority(char: Char): Int =
         if (char.isLowerCase())
                 char.code - 96

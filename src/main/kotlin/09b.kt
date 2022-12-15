@@ -3,7 +3,7 @@ import java.io.File
 import kotlin.math.absoluteValue
 import kotlin.math.sign
 
-fun main() {
+fun day9b() {
     val lines = File("9.txt").readLines()
 
     data class Coords(var x: Int, var y: Int)

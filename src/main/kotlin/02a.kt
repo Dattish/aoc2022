@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main() {
+fun day2a() {
     fun calculateWinScore(translatedOpponent: String, translatedYou: String): Int {
         if (translatedOpponent == translatedYou) {
             return 3

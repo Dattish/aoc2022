@@ -1,7 +1,7 @@
 import java.io.File
 import kotlin.math.absoluteValue
 
-fun main() {
+fun day15a() {
     val lines = File("15.txt").readLines()
     val regex = Regex("Sensor at x=(-?[0-9]+), y=(-?[0-9]+): closest beacon is at x=(-?[0-9]+), y=(-?[0-9]+)")
     val yToLookAt = 2000000

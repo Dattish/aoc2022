@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main() {
+fun day8a() {
     val grid = File("8.txt").readLines()
     val h = grid.size
     val w = grid[0].length

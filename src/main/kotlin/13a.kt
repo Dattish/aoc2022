@@ -37,7 +37,7 @@ class Day13A {
     }
 }
 
-fun main() {
+fun day13a() {
     val lines = File("13.txt").readLines()
 
     fun parse(line: String, index: Int): Pair<ParsedValue, Int> {

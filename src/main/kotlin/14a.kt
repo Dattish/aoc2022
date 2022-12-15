@@ -1,7 +1,7 @@
 import java.io.File
 import kotlin.math.max
 
-fun main() {
+fun day14a() {
     val lines = File("14.txt").readLines()
 
     val grid = Array(1000) { Array(1000) { false } }

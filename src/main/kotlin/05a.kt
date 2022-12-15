@@ -1,7 +1,7 @@
 
 import java.io.File
 
-fun main() {
+fun day5a() {
     val lines = File("5.txt").readLines()
     val boxes = mutableListOf<ArrayDeque<Char>>()
     val moveRegex = Regex("move ([0-9]+) from ([0-9]+) to ([0-9]+)")

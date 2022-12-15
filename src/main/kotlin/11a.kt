@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main() {
+fun day11a() {
     val lines = File("11.txt").readLines()
     val old = "old "
 

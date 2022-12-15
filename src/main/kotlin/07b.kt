@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main() {
+fun day7b() {
     abstract class File {
         abstract fun size(): Long
     }

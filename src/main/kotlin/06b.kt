@@ -1,7 +1,7 @@
 
 import java.io.File
 
-fun main() {
+fun day6b() {
     val lines = File("6.txt").readLines()
     val cap = 14
     val q = ArrayDeque<Int>(cap + 1)
