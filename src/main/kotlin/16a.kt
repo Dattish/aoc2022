@@ -7,14 +7,11 @@ fun day16a() {
 
     data class Room(val name: String, val flow: Int, val adjacent: List<String>)
 
-    val rooms = mutableMapOf<String, Room>()
-
-    for (line in lines) {
-        val s = line.split(' ')
-        val name = s[1]
-        val flow = s[4].split('=')[1].split(';')[0].toInt()
-        val adjacent = s.slice(9 until s.size).map { it.split(',')[0] }
-        rooms[name] = Room(name, flow, adjacent)
+    val rooms = lines.map { it.split(' ') }.associate {
+        val name = it[1]
+        val flow = it[4].split('=')[1].split(';')[0].toInt()
+        val adjacent = it.drop(9).map { inner -> inner.split(',')[0] }
+        name to Room(name, flow, adjacent)
     }
 
     data class CacheKey(val room: String, val opened: Set<String>, val mins: Int)
