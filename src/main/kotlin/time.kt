@@ -4,7 +4,7 @@ import kotlin.time.toDuration
 
 fun main() {
     val millis = measureTimeMillis {
-        day19b()
+        day20b()
     }
     println("time: ${millis.toDuration(DurationUnit.MILLISECONDS)}")
 }
